@@ -1,0 +1,49 @@
+@charset "utf-8";
+.box {
+    text-align: center;
+}
+
+@font-face {
+    font-family: 'iconfont';
+    /* project id 1286673 */
+    src: url('//at.alicdn.com/t/font_1286673_6vk657stxjc.eot');
+    src: url('//at.alicdn.com/t/font_1286673_6vk657stxjc.eot?#iefix') format('embedded-opentype'), url('//at.alicdn.com/t/font_1286673_6vk657stxjc.woff2') format('woff2'), url('//at.alicdn.com/t/font_1286673_6vk657stxjc.woff') format('woff'), url('//at.alicdn.com/t/font_1286673_6vk657stxjc.ttf') format('truetype'), url('//at.alicdn.com/t/font_1286673_6vk657stxjc.svg#iconfont') format('svg');
+}
+
+.iconfont {
+    color: blue;
+    font: normal 50px "iconfont";
+}
+
+p {
+    /* 首行缩进 两个文字单位,固定写法 */
+    text-indent: 2em;
+    /* 文本装饰线 none underline overline line-through*/
+    text-decoration: underline;
+    /* 阴影 */
+    /*  行高 line-height*/
+    /* word-spacing 单词间距 */
+    /* letter-spacing 在字符间距 */
+    /* white_space 如何处理空格和换行
+    normal 默认
+    pre 段落里所有的空格符和换行符都会被保留
+     */
+    color: blue;
+    /* font-style: italic;
+    font-weight: bold;
+    font-size: 28px;
+    font-family: "微软雅黑"; 
+    line-height: 40px */
+    font: bold 28px/70px "自定义字体";
+}
+
+.wrap {
+    width: 200px;
+    height: 35px;
+    background: pink;
+}
+
+@font-face {
+    font-family: "自定义字体";
+    src: url("../fonts/造字工房稚言体.ttf")
+}

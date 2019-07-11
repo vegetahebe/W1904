@@ -1,0 +1,29 @@
+@charset "utf-8";
+.head {
+    font-weight: 400;
+    color: red;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 90px;
+    right: 330px;
+}
+
+.head ul, li {
+    float: left;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background-color: black;
+    margin: 1px;
+    position: relative;
+}
+
+.menu2{
+    visibility: hidden;
+}
+.menu1:hover .menu2{
+    
+
+}

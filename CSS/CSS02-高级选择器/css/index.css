@@ -1,0 +1,33 @@
+@charset "UTF-8";
+.abc::first-letter{
+    font-size: 42px;
+    color:blue;
+}
+.stu::before{
+    content:"余智洋";
+    color: green;
+    /* 插入元素默认为行内元素  inline */
+    display: block;
+}
+.stu::after{
+    content: "电脑玩家贝吉塔";
+    color: red;
+}
+.text:hover::after{
+    content:attr(data-link);
+}
+.list li:first-child,.list li:last-child,.list li:nth-child(4){
+    color:blue;}
+
+.list li:nth-child(2n+1){
+    /* 添加下划线 */
+    text-decoration: underline;
+}
+.list li{
+    /* 修改元素类型,让列表横向显示 */
+    display: inline-block;
+    padding:0 8px;
+}
+.list li:not(:last-child){
+    border-right: 2px solid pink
+}

@@ -1,0 +1,67 @@
+@charset "utf-8";
+/* 标签选择器 */
+h1{
+    /* 字体大小 */
+    font-size: 16px;
+    color: green !important;
+}
+/* 类选择器 */
+.box{
+    width: 200px;
+    height: 100px;
+    background: orange;
+    /* 下边距 */
+    margin-bottom: 10px;
+}
+/* id选择器 */
+#city {
+    color:grey;
+    font: size 22px;
+    /* 文字对齐方式,水平居中 */
+    text-align:center;
+    /* 行高=容器高度,文本会垂直居中
+    前提是  只有一行文本 */
+    list-style: height 100px;
+    
+}
+/* 后代选择器:空格 */
+    
+.list li{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 33px;
+
+    /* 修改元素类型 */
+    display: inline-block;
+}
+
+/* 鼠标悬浮在li上时的样式 */
+.list li:hover{
+background: pink;
+}
+/* 按住状态 */
+.list li:active{
+    background: orange;
+}
+
+/* + 选择下一个兄弟元素 */
+.list1:hover+li{
+    /* 不透明度0-1 */
+    opacity: .5;
+}
+/* ~ 选择下一个兄弟元素 */
+.list a{
+    /* 去下划线 */
+    text-decoration: none;
+    background: red;
+}
+.list{
+    /* 去除列表标号 */
+    list-style: none;
+    /* 去除默认间距 */
+    padding:0;
+}
+[type]:focus{
+    /* border 宽度 样式 颜色 */
+    border: 5px solid red;
+}

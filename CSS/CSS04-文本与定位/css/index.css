@@ -1,0 +1,81 @@
+@charset "utf-8";
+.list li:hover+li {
+    /* 设为隐藏元素 不占据空间*/
+    /* display: none; */
+    /* 隐藏元素,占据空间 */
+    visibility: hidden;
+    /* 透明度 0为完全透明 1为完全可见 */
+    opacity: 0;
+}
+
+.list li {
+    /* 修改鼠标指针样式 */
+    cursor: crosshair;
+}
+
+.fl {
+    float: left;
+    width: 20%;
+    height: 300px;
+    background: pink;
+}
+
+.fr {
+    float: right;
+    width: 60%;
+    height: 300px;
+    background: orange;
+}
+
+.square {
+    width: 100px;
+    height: 30px;
+    background: red;
+    /* 相对定位
+    一般用于位置的微调
+    相对于自身之前所在的位置进行移动 
+    不会脱离文档流*/
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+body {
+    height: 2000px;
+}
+
+.qr-code {
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+}
+
+
+/* 绝对定位
+相对于离它最近的组先级元素中拥有position属性的哪一个组先级元素进行定位
+一般用于在某个区间范围(容器)内定位
+会脱离文档流 */
+
+.a {
+    margin-top: 200px;
+    width: 500px;
+    height: 500px;
+    background-color: purple;
+    position: relative;
+}
+
+.b {
+    width: 300px;
+    height: 300px;
+    background-color: orange;
+}
+
+.c {
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    /* 绝对定位 */
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
