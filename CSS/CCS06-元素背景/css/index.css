@@ -1,0 +1,27 @@
+@charset "utf-8";
+.box {
+    width: 99px;
+    height: 99px;
+    background: url("../images/sprite.jpeg") -340px -50px;
+}
+.box:hover {
+    background-position: -230px -50px;
+}
+
+
+.square {
+    width: 500px;
+    height: 300px;
+}
+
+.t1 {
+    background: linear-gradient(to right, black, red, green);
+}
+
+.t2 {
+    background: repeating-linear-gradient(to bottom, #fff 0, #fff 50px, black 51px);
+    line-height: 51px;
+}
+
+
+

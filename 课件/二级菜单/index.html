@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>二级菜单</title>
+    <style>
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        .menu-list {
+            text-align: center;
+            font-size: 0;
+        }
+        .menu-list > li {
+            width: 120px;
+            height: 35px;
+            font-size: 16px;
+            background: #000;
+            color: #ffffff;
+            display: inline-block;
+            text-align: center;
+            line-height: 35px;
+            vertical-align: top;
+            cursor: pointer;
+            position: relative;
+        }
+        .sub-list {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            display: none;
+        }
+        .sub-list > li {
+            width: 120px;
+            height: 35px;
+            background: red;
+            color: #ffffff;
+        }
+        .menu-list > li:hover .sub-list {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul class="menu-list">
+        <li>
+            MENU-01
+            <ul class="sub-list">
+                <li>OPTIONS-01</li>
+                <li>OPTIONS-02</li>
+                <li>OPTIONS-03</li>
+            </ul>
+        </li>
+        <li>
+            MENU-02
+            <ul class="sub-list">
+                <li>OPTIONS-01</li>
+                <li>OPTIONS-02</li>
+                <li>OPTIONS-03</li>
+                <li>OPTIONS-04</li>
+                <li>OPTIONS-05</li>
+            </ul>
+        </li>
+        <li>MENU-03</li>
+        <li>MENU-04</li>
+        <li>MENU-05</li>
+    </ul>
+
+</body>
+
+</html>

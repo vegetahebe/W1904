@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+.box {
+    width: 160px;
+    height: 160px;
+    margin: 200px auto;
+    position: relative;
+
+    transform: rotateX(20deg) rotateY(40deg);
+    /* 模拟3D场景 */
+    transform-style: preserve-3d;
+    perspective: 400px;    
+}
+
+.face {
+    opacity: .75;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font: bold 32px/160px "微软雅黑";
+    color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    background: pink;
+    transform: translateZ(80px);
+}
+
+.back {
+    background: orange;
+    transform: rotateY(180deg) translateZ(80px);
+}
+
+.left {
+    background: greenyellow;
+    transform: rotateY(-90deg) translateZ(80px);
+}
+
+.right {
+    background: lightseagreen;
+    transform: rotateY(90deg) translateZ(80px);
+}
+
+.top {
+    background: cornflowerblue;
+    transform: rotateX(90deg) translateZ(80px);
+}
+
+.bottom {
+    background: gray;
+    transform: rotateX(-90deg) translateZ(80px);
+}
+
+/* 定义帧动画 */
+@keyframes test_anim {
+    /* from {
+        background: red;
+        margin-left: 0;
+        border-radius: 0;
+    } */
+    to {
+        background: green;
+        margin-left: 500px;
+        border-radius: 50%;
+    }
+    /* 5% {
+
+    }
+    20% {
+
+    } */
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background: red;
+    animation: test_anim 1s linear 5 alternate forwards;
+}
+

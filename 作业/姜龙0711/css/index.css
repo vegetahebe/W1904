@@ -1,29 +1,35 @@
 @charset "utf-8";
-.head {
-    font-weight: 400;
-    color: red;
-    letter-spacing: 1px;
-    position: absolute;
-    top: 90px;
-    right: 330px;
-}
 
-.head ul, li {
-    float: left;
+
+
+.head {
+    font-size: 0;
     text-align: center;
-    cursor: pointer;
+    margin-top: 100px;
+}
+.head > li {
+    font-size: 16px;
     width: 120px;
-    height: 40px;
-    line-height: 40px;
-    background-color: black;
-    margin: 1px;
+    line-height: 35px;
+    background: #000;
+    color: #ffff;
+    display: inline-block;
+    vertical-align: top;
     position: relative;
 }
 
-.menu2{
-    visibility: hidden;
+.limenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
 }
-.menu1:hover .menu2{
-    
-
+.limenu > li {
+    width: 120px;
+    line-height: 35px;
+    background: #000;
+    transition: all .5s linear;
+    transform: rotateY(90deg);
+}
+.head > li:hover .limenu li {
+    transform: rotateY(0);
 }

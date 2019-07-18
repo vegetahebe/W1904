@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+
+.list {
+    width: 1100px;
+    margin: 0 auto;
+
+    /* 声明弹性布局 */
+    display: flex;
+    /* 设置主轴对齐方式 */
+    justify-content: space-between;
+    /* 允许换行 */
+    flex-wrap: wrap;
+}
+
+
+.list li {
+    width: 30%;
+    height: 200px;
+    background: pink;
+    margin-bottom: 5%;
+    /* 过渡属性 */
+    transition: all .5s linear;
+}
+.list li:hover {
+    background: orange;
+    border-radius: 50%;
+    margin-bottom: 100px;
+    opacity: .1;
+    /* 位移 */
+    /* transform: translateX(200px); */
+    /* 旋转 */
+    /* transform: rotateZ(360deg); */
+    /* 缩放 */
+    /* transform: scale(.5, .5); */
+    /* 组合值 */
+    transform: translateX(200px)  rotateZ(360deg) scale(.5, .5);
+}
+

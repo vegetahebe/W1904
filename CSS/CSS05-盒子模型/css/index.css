@@ -1,0 +1,74 @@
+@charset "utf-8";
+.box {
+    width: 200px;
+    height: 200px;
+    background: pink;
+    padding: 10px;
+    border: 10px solid #000;
+    /* 转换为IE盒子模型 */
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+.square {
+    width: 50%;
+    height: 20%;
+    background: blue;
+    margin: 50px 0;
+    /* 设置圆角 */
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+.text {
+    display: inline-block;
+    background: pink;
+    /* 四个方向同时设置 */
+    /* padding: 20px; */
+
+    /* padding: 垂直 水平; */
+    /* padding: 8px 20px; */
+
+    /* padding: 上 水平 下 */
+    /* padding: 20px 50px 100px; */
+
+    /* padding：上 右 下 左 */
+    padding: 5px 10px 15px 20px;
+
+    border: 20px dashed purple;
+}
+
+
+.wrap section {
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+.wrap section:first-child {
+    background: orange;
+    margin-bottom: 200px;   
+}
+.wrap section:last-child {
+    margin-top: 100px;
+}
+
+
+
+.a {
+    width: 300px;
+    height: 200px;
+    background: pink;
+    margin: 50px 0;
+    box-shadow: 10px 20px 5px 2px #000;
+
+    overflow: auto;
+    resize: both;
+}
+
+
+
+
+
+

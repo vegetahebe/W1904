@@ -1,0 +1,74 @@
+@charset "utf-8";
+.box {
+    height: 160px;
+    width: 160px;
+    margin: 250px auto;
+    position: relative;
+    text-align: center;
+    /* 模拟3D场景 */
+    transform-style: preserve-3d;
+    /* perspective: 2200px; */
+    /* 让平面有少量倾斜 */
+    transform: rotateX(-20deg) rotateY(25deg)
+}
+
+.face {
+    opacity: .75;
+    height: 100%;
+    width: 100%;
+    font: bold 32px/160px white;
+    position: absolute;
+}
+
+.front {
+    background-color: pink;
+    transform: translateZ(80px)
+}
+
+.back {
+    background-color: orange;
+    transform: rotateY(180deg) translateZ(80px);
+}
+
+.left {
+    background-color: lightgreen;
+    transform: rotateY(-90deg) translateZ(80px);
+}
+
+.right {
+    background-color: lightyellow;
+    transform: rotateY(90deg) translateZ(80px);
+}
+
+.top {
+    background-color: cornflowerblue;
+    transform: rotateX(90deg) translateZ(80px);
+    ;
+}
+
+.bottom {
+    background-color: purple;
+    transform: rotateX(-90deg) translateZ(80px);
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background: red;
+    animation: text_anim 10s linear 5 alternate forwards;
+}
+
+/* 定义帧动画 */
+
+@keyframes text_anim {
+    from {
+        background: red;
+        margin-left: 0;
+        border-radius: 0;
+    }
+    to {
+        background: green;
+        margin-left: 100%;
+        border-radius: 50%
+    }
+}

@@ -1,0 +1,27 @@
+@charset "utf-8";
+.list { 
+    transform-style: preserve-3d;
+    width: 1100px;
+    margin: 0 auto;
+    /* 声明弹性布局 */
+    display: flex;
+    /* 设置主轴对齐方式 start 左对齐, end 右对齐, center 居中对齐*/
+    justify-content: space-between;
+    /* 允许换行 */
+    flex-wrap: wrap
+}
+.list li{
+    width: 30%;
+    height: 200px;
+    background-color: pink;
+    margin-bottom: 5%;
+    /* 添加过度属性 */
+    transition: all 1200ms linear 200ms;
+}
+.list li:hover{
+    background-color: orange;
+    border-radius: 40%;
+    
+    /* 缩放 */
+    transform: scale(1.5,0.5);
+}
